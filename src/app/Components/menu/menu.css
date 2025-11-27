@@ -1,0 +1,51 @@
+.menu {
+  width: 100%;
+  background-color: #2c3e50; /* color de fondo de la barra */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;             /* elementos en fila */
+  justify-content: flex-end; /* alinear a la izquierda */
+  gap: 20px;                 /* espacio entre enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #eeeeee; /* efecto hover */
+}
+.menu .buscar {
+  display: flex;
+  gap: 5px;
+  margin-right: right; /* Empuja el formulario de búsqueda a la izquierda */
+}
+.menu .buscar input {
+  padding: 6px 80px;
+  padding-left: 15px;
+  text-align: left; border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+}
+.menu .buscar button {
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--accent);
+  color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

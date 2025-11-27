@@ -1,0 +1,17 @@
+<main class="menu">
+<nav class="menu">
+  <ul>
+    <form class="buscar" (ngSubmit)="onBuscar()">
+    <input type="text" name="termino" 
+    [(ngModel)]="terminoBusqueda"
+    placeholder="Buscar...">
+    <button type="submit">Buscar</button>
+  </form>
+    <li><a routerLink="/login">Login</a></li>
+    <li><a routerLink="/dashboard">Dashboard</a></li>
+    <li><a routerLink="/perfil">Perfil</a></li>
+    <li><a routerLink="/config">Configuración</a></li>
+
+  </ul>
+</nav>
+</main>
